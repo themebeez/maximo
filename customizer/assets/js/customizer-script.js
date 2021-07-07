@@ -6,11 +6,11 @@
 		var topHeaderRightElement = jQuery('#customize-control-top_header_right_element select');
 
 		jQuery('body').on('change', topHeaderLeftElement, function() {
-			taleBlogDisableSelectOption( topHeaderLeftElement, topHeaderRightElement );
+			maximoBlogDisableSelectOption( topHeaderLeftElement, topHeaderRightElement );
 		});	
 		
 		jQuery('body').on('change', topHeaderRightElement, function() {
-			taleBlogDisableSelectOption( topHeaderRightElement, topHeaderLeftElement );
+			maximoBlogDisableSelectOption( topHeaderRightElement, topHeaderLeftElement );
 		});	
 
 		function responsiveSwitcher(){
@@ -89,7 +89,7 @@
 	    
 	});
 
-	function taleBlogDisableSelectOption( source, target ) {
+	function maximoBlogDisableSelectOption( source, target ) {
 		var targetValue = source.val();
 		target.find('option').each(function() {
 			targetOption = jQuery(this);

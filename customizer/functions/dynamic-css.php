@@ -1213,7 +1213,7 @@ if ( ! function_exists( 'maximo_dynamic_css' ) ) {
 
 	        if ( maximo_is_page_header_activated() ) {
 
-                // Page header height for talet devices
+                // Page header height for maximo t devices
 
 		        $page_header_height_tablet = ( maximo_get_option( 'page_header_height_tablet' ) ) ? maximo_get_option( 'page_header_height_tablet' ) : $customizer_defaults['page_header_height']['tablet'];
 
@@ -1574,7 +1574,7 @@ if ( ! function_exists( 'maximo_dynamic_css' ) ) {
 
 	        if ( maximo_is_page_header_activated() ) {
 
-		        // Page header height for talet devices
+		        // Page header height for maximo mobile devices
 
                 $page_header_height_mobile = ( maximo_get_option( 'page_header_height_mobile' ) ) ? maximo_get_option( 'page_header_height_mobile' ) : $customizer_defaults['page_header_height']['mobile'];
 

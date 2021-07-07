@@ -75,7 +75,7 @@ const project_text_domain = 'maximo';
 /*
 ===========================================================
 =
-= Define task (Almost no chnages required)
+= Define task (Almost no changes required)
 =
 ====================================================
 */
@@ -119,7 +119,7 @@ gulp.task('WordpressPot', function () {
 });
 
 // just hit the command "gulp" it will run the following tasks...
-gulp.task('default', gulp.series( 'sassTask', 'WordpressPot', (done) => {
+gulp.task('default', gulp.series('sassTask', 'WordpressPot', (done) => {
 
     // gulp.watch(scriptpath.script_src, gulp.series('scriptsTask'));
     gulp.watch(sasspath.sass_src, gulp.series('sassTask'));

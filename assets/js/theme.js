@@ -121,11 +121,11 @@ var __TBJsInit = {
             var bodySkinVal = body.getAttribute('data-skin');
             
             if ( localStorage ) {
-                if ( ! localStorage.getItem( 'taleBlogThemeSkin' ) ) {
-                    localStorage.setItem('taleBlogThemeSkin', bodySkinVal );
+                if ( ! localStorage.getItem( 'maximoBlogThemeSkin' ) ) {
+                    localStorage.setItem('maximoBlogThemeSkin', bodySkinVal );
                     themeSkin = bodySkinVal;
                 } else {
-                    themeSkin = localStorage.getItem('taleBlogThemeSkin');
+                    themeSkin = localStorage.getItem('maximoBlogThemeSkin');
                 }
             }       
 
@@ -138,13 +138,13 @@ var __TBJsInit = {
                     body.classList.add('maximo-dark-mode-disabled');
                 }
                 skinSwitcherBtnEle.addEventListener('click', (e) => {
-                    var localStorageThemeSkin = localStorage.getItem('taleBlogThemeSkin');
+                    var localStorageThemeSkin = localStorage.getItem('maximoBlogThemeSkin');
                     if ( localStorageThemeSkin === bodyActiveSkinVal ) {
-                        localStorage.setItem('taleBlogThemeSkin', 'maximo-theme-dark' );
+                        localStorage.setItem('maximoBlogThemeSkin', 'maximo-theme-dark' );
                         body.setAttribute('data-skin', 'maximo-theme-dark');
                         __TBEnabledDarkModeBtnClasses( skinSwitcherBtnEle );
                     } else {
-                        localStorage.setItem('taleBlogThemeSkin', bodyActiveSkinVal );
+                        localStorage.setItem('maximoBlogThemeSkin', bodyActiveSkinVal );
                         body.setAttribute('data-skin', bodyActiveSkinVal);
                         __TBDisabledDarkModeBtnClasses( skinSwitcherBtnEle );
                     }

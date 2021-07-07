@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Tale_Blog
+ * @package Maximo
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
