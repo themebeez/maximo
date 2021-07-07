@@ -198,7 +198,7 @@ function maximo_scripts() {
 
 	}
 
-	wp_enqueue_style( 'maximo-theme', get_template_directory_uri() . '/assets/css/theme.css', array(), MAXIMO_THEME_VERSION );
+	wp_enqueue_style( 'maximo-theme', get_template_directory_uri() . '/assets/css/maximo.min.css', array(), MAXIMO_THEME_VERSION );
 
 	$dynamic_css = maximo_dynamic_css();
 
@@ -218,7 +218,7 @@ function maximo_scripts() {
 
 	wp_enqueue_script( 'maximo-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.min.js', array( 'jquery' ), MAXIMO_THEME_VERSION, true );		
 
-	wp_register_script( 'maximo-theme', get_template_directory_uri() . '/assets/js/theme.js', array(), MAXIMO_THEME_VERSION, true );
+	wp_register_script( 'maximo-theme', get_template_directory_uri() . '/assets/js/maximo.min.js', array(), MAXIMO_THEME_VERSION, true );
 
 	wp_localize_script( 'maximo-theme', 'scriptObj', $script_params );
 
@@ -242,7 +242,7 @@ function maximo_admin_scripts() {
 
 	wp_enqueue_style( 'maximo-theme-backend', get_template_directory_uri() . '/assets/css/theme-backend.min.css' );
 
-	wp_enqueue_script( 'maximo-theme-backend', get_template_directory_uri() . '/assets/js/theme-backend.js', array( 'jquery' ), MAXIMO_THEME_VERSION, true );
+	wp_enqueue_script( 'maximo-theme-backend', get_template_directory_uri() . '/assets/js/theme-backend.min.js', array( 'jquery' ), MAXIMO_THEME_VERSION, true );
 }
 add_action( 'admin_enqueue_scripts', 'maximo_admin_scripts' );
 

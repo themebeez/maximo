@@ -38,21 +38,19 @@ const shell = require('gulp-shell');
 const scriptpath = {
 
     script_src: [
-        'assets/src/js/libraries/*.js',
-        'assets/src/js/custom/*.js',
+        './assets/js/*.js',
+        '!./assets/js/*.min.js',
     ],
-
-    script_dist: "assets/dist/js/",
+    script_dist: "./assets/js/",
 }
-const output_js_file_name = "bundle.js"; // what would you like to name your minified bundled js file
 
 // 2# SASS/SCSS file path
 const sasspath = {
 
-    sass_src: ["assets/scss/**/*.scss"],
-    sass_dist: "assets/css/",
+    sass_src: ["./assets/scss/**/*.scss"],
+    sass_dist: "./assets/css/",
 }
-const compiled_sass_css_file_name = "theme.css"; // what would you like to name your compiled CSS file
+const compiled_sass_css_file_name = "maximo.min.css"; // what would you like to name your compiled CSS file
 
 
 // #3 path of php files to generate WordPress POT file
@@ -72,6 +70,35 @@ const php_files = {
 const project_name = 'Maximo';
 const project_text_domain = 'maximo';
 
+// #4 zips production ready files
+const output_filename = 'maximo-production.zip';
+
+const files_folders = {
+
+    filefolders_src: [
+
+        // select all files & folders
+        './*',
+        './*/**',
+
+        // build tools
+        '!./.git',
+        '!./.gitignore',
+        '!./node_modules/**',
+        '!./gulpfile.js',
+        '!./package.json',
+        '!./package-lock.json',
+        '!./composer.json',
+        '!./composer.lock',
+        '!./sftp-config.json',
+
+        // source files
+        '!./assets/scss/**',
+    ],
+
+    production_zip_file_path: "./",
+}
+
 /*
 ===========================================================
 =
@@ -83,7 +110,6 @@ const project_text_domain = 'maximo';
 
 gulp.task('scriptsTask', function () {
     return gulp.src(scriptpath.script_src)
-        .pipe(concat(output_js_file_name))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
         .pipe(gulp.dest(scriptpath.script_dist));
@@ -118,11 +144,40 @@ gulp.task('WordpressPot', function () {
         .pipe(gulp.dest('languages/' + project_text_domain + '.pot'));
 });
 
-// just hit the command "gulp" it will run the following tasks...
-gulp.task('default', gulp.series('sassTask', 'WordpressPot', (done) => {
+gulp.task('ZipProductionFiles', function () {
+    return gulp.src(files_folders.filefolders_src)
+        .pipe(zip(output_filename))
+        .pipe(gulp.dest(files_folders.production_zip_file_path))
+});
 
-    // gulp.watch(scriptpath.script_src, gulp.series('scriptsTask'));
+
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+=
+= Run All tasks
+=
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+//=========================================
+// = C O M M A N D S                      = 
+//=========================================
+//
+// 1. Command: gulp (will compile static resources)
+// 2. Command: gulp zipprod (will generate production ready files)
+//
+//=========================================
+
+
+gulp.task('default', gulp.series('scriptsTask', 'sassTask', 'WordpressPot', (done) => {
+
+    gulp.watch(scriptpath.script_src, gulp.series('scriptsTask'));
     gulp.watch(sasspath.sass_src, gulp.series('sassTask'));
     gulp.watch(php_files.php_files_path, gulp.series('WordpressPot'));
+    done();
+}));
+
+gulp.task('zipprod', gulp.series('ZipProductionFiles', (done) => {
+
     done();
 }));
