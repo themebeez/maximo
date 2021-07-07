@@ -1,0 +1,89 @@
+.maximo-post-element-title .maximo-entry-title a:hover {
+	color: var(--maximo-accent-color);
+	text-decoration: none;
+    box-shadow: 0 -1px 0 0 var(--maximo-accent-color) inset, 0 -3px 0 0 var(--maximo-accent-color) inset;
+    padding-bottom: 4px;
+    transition-duration: 0.3s;
+}
+
+.maximo-post-element-excerpt {
+    color: var(--maximo-content-color);
+}
+
+.maximo-post-element-excerpt p {
+    margin-bottom: 1em;
+}
+
+.maximo-post-element-category .maximo-post-structure-categories {
+    margin-bottom: 0;
+}
+
+.maximo-post-structure-categories .post-categories li a {
+    color: var(--maximo-accent-color);
+}
+
+.maximo-post-structure-categories .post-categories li a:hover {
+    color: var(--maximo-accent-color);
+}
+
+.maximo-post-element-thumbnail figure > img {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.maximo-post-element-thumbnail:hover figure > img {
+    transform: scale(1.08);
+    transition-duration: 0.5s;
+}
+
+.maximo-read-more {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.maximo-rm-icon {
+    position: relative;
+    margin-left: 0.9375em;
+    height: 2.5em;
+    width: 2.5em;
+    font-size: 0.75rem;
+    display: inline-block;
+    border: 2px solid var(--maximo-border-color);
+    text-align: center;
+    line-height: 2.325em;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.maximo-rm-icon::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--maximo-accent-color);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.maximo-read-more:hover .maximo-rm-icon {
+    margin-left: 2.9375em;
+    border-color: var(--maximo-accent-color);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.maximo-read-more:hover .maximo-rm-icon::before {
+    width: 2.5em;
+    left: -2em;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}

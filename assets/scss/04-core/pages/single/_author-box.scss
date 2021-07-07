@@ -1,0 +1,28 @@
+.maximo-author-box {
+	margin-top: 3.125em;
+}
+
+.maximo-author-box-inner {
+	padding: 2em;
+	border: 1px solid var(--maximo-border-color);
+}
+
+.author-name {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1;
+	font-size: var(--maximo-font-size-large);
+}
+
+.author-description {
+	color: var(--maximo-content-color);
+}
+
+.author-description p:last-child {
+	margin-bottom: 0px;
+}
+
+.author-box-avatar img.avatar {
+	border-radius: 50%;
+}

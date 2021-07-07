@@ -1,0 +1,66 @@
+.maximo-site-navigation {
+    margin-top: 3.125em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.maximo-nav-previous a,
+.maximo-nav-next a {
+    display: inline-block;
+    color: var(--maximo-accent-color);
+}
+
+.maximo-nav-previous {
+    margin-right: 2.5em;
+}
+
+.maximo-nav-previous a::before {
+    content: '\e965';
+    font-family: 'fontisto';
+    margin-right: 0.625em;
+    font-size: var(--maximo-icon-font-size);
+    display: inline-block;
+}
+
+.maximo-nav-next a::after {
+    content: '\e966';
+    font-family: 'fontisto';
+    margin-left: 0.625em;
+    font-size: var(--maximo-icon-font-size);
+    display: inline-block;
+}
+
+.maximo-site-pagination {
+    margin-top: 3.125em;
+    text-align: center;
+}
+
+.page-links .post-page-numbers:not(:last-child),
+.nav-links .page-numbers:not(:last-child) {
+    margin-right: 0.9375em;
+}
+
+.nav-links .page-numbers,
+.page-links .post-page-numbers {
+    display: inline-block;
+    padding: 0.625em 1.25em;
+    color: var(--maximo-text-color);
+}
+
+.nav-links .page-numbers:hover, 
+.page-links .post-page-numbers:hover {
+    background-color: var(--maximo-accent-color);
+    color: var(--maximo-accent-bg-text-color);
+}
+
+.nav-links .page-numbers.current,
+.page-links .post-page-numbers.current {
+    background-color: var(--maximo-accent-color);
+    color: var(--maximo-accent-bg-text-color);
+}
+
+.nav-links .page-numbers.prev,
+.nav-links .page-numbers.next {
+    font-size: 0.75rem;
+}

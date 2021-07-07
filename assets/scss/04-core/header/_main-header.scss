@@ -1,0 +1,45 @@
+body:not(.maximo-transparent-header-enabled) #masthead {
+    background-color: var(--maximo-background-color);
+}
+
+body:not(.maximo-transparent-header-enabled) .maximo-main-header-2 {
+    border-bottom: 1px solid var(--maximo-border-color);
+}
+
+body.maximo-transparent-header-enabled .maximo-main-header-2 {
+    border-bottom: 1px solid var(--maximo-transparent-header-border-color);
+}
+
+body:not(.maximo-transparent-header-enabled) .maximo-main-header-navigation-elements-container {
+    border-top: 1px solid var(--maximo-border-color);
+    border-bottom: 1px solid var(--maximo-border-color);
+}
+
+.maximo-sticky-main-navigation {
+    z-index: 10;
+}
+
+body.maximo-transparent-header-enabled .maximo-sticky-enabled {
+    z-index: 10;
+    transition-duration: 0.3s;
+}
+
+body.maximo-transparent-header-enabled .maximo-main-header-container a:hover {
+    color: var(--maximo-accent-color);
+}
+
+body .maximo-sticky-main-navigation.maximo-sticky-enabled {
+    position: fixed;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    z-index: 11;
+    background-color: var(--maximo-site-background-color);
+    color: var(--maximo-text-color);
+    border-bottom: 1px solid var(--maximo-border-color);
+}
+
+.maximo-sticky-main-navigation.maximo-sticky-enabled.maximo-sticky-show {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}

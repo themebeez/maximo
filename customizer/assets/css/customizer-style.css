@@ -1,0 +1,178 @@
+.customize-control {
+
+    margin-bottom: 15px;
+}
+.customize-control-description {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+#customize-theme-controls .customize-pane-child.open {
+    height:  100%;
+}
+
+#customize-control-typography_info_1 {
+    margin-top: 0px;
+}
+
+#customize-control-colors_info_1 {
+  margin-top: 15px;
+}
+
+#customize-control-miscellaneous_info_1 {
+    margin-top: 0px;
+}
+
+#customize-control-buttons_info_1 {
+    margin-top: 0px;
+}
+
+#accordion-section-maximo_colors,
+#accordion-section-maximo_buttons,
+#accordion-panel-maximo_site_header_panel,
+#accordion-panel-woocommerce,
+#accordion-section-title_tagline,
+#accordion-section-maximo_transparent_header,
+#accordion-section-maximo_archive_pages,
+#accordion-panel-maximo_site_pages,
+#accordion-panel-nav_menus {
+  margin-top: 15px;
+}
+
+
+li[id*="customize-control-woocommerce"]::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #d9d9d9;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: 16px;
+}
+
+
+
+/* Responsive Switcher */
+
+.customize-control.has-switchers .customize-control-title {
+    display: block;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.customize-control.has-switchers .customize-control-title span {
+    line-height: 20px
+}
+
+.customize-control .responsive-switchers {
+    margin-left: 5px;
+    width: auto;
+    float: right;
+}
+
+.customize-control .responsive-switchers li:not(.desktop) {
+    display: none
+}
+
+.customize-control .responsive-switchers-open.responsive-switchers li {
+    display: block
+}
+
+.customize-control .responsive-switchers li {
+    float: left;
+    margin: 0
+}
+
+.customize-control .responsive-switchers li button {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #a4afb7;
+    position: relative;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+    cursor: pointer
+}
+
+.customize-control .responsive-switchers li button:hover {
+    background-color: #c2cbd2
+}
+
+.customize-control .responsive-switchers li:not(.desktop) button.active {
+    background-color: #13aff0
+}
+
+.customize-control .responsive-switchers.responsive-switchers-open li button.active {
+    background-color: #13aff0
+}
+
+.customize-control .responsive-switchers li button i {
+    width: auto;
+    height: auto;
+    font-size: inherit;
+    line-height: 18px
+}
+
+.customize-control.has-switchers>.control-wrap:not(.active) {
+    display: none;
+    width: 100%
+}
+
+.customize-control-code_editor .CodeMirror {
+    height: calc(100vh - 185px)
+}
+
+body.rtl .customize-control-checkbox input[type=checkbox] {
+    margin: 0 0 0 6px
+}
+
+body.rtl .customize-control-checkbox input[type=checkbox]:checked:before,
+body.rtl .customize-control-ocean-multi-check input[type=checkbox]:checked:before {
+    right: 0;
+    left: auto
+}
+
+body.rtl .customize-control .responsive-switchers,
+body.rtl .customize-control .responsive-switchers li button {
+    margin-right: 5px;
+    margin-left: 0
+}
+
+body.rtl .customize-control .responsive-switchers li {
+    float: right
+}
+
+@media screen and (max-width:768px) {
+    body .customize-control .responsive-switchers {
+        display: none
+    }
+    body .customize-control.has-switchers>.control-wrap:not(.active) {
+        display: inline-block
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    body .customize-control.has-switchers>.control-wrap {
+        display: inline-block
+    }
+    body .customize-control.has-switchers>.control-wrap:not(.tablet) {
+        display: none
+    }
+}
+
+@media screen and (max-width:480px) {
+    body .customize-control.has-switchers>.control-wrap {
+        display: inline-block
+    }
+    body .customize-control.has-switchers>.control-wrap:not(.mobile) {
+        display: none
+    }
+}

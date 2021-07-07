@@ -1,0 +1,77 @@
+.maximo-boxed-fullwidth-article,
+.maximo-boxed-horizontal-list-article {
+	padding: 1.875em;
+	border: 1px solid var(--maximo-border-color);
+}
+
+.maximo-fullwidth-layout-item:not(:last-child),
+.maximo-horizontal-list-layout-item:not(:last-child) {
+	margin-bottom: 3.125em;
+}
+
+.maximo-fullwidth-layout-item .maximo-post-element,
+.maximo-horizontal-list-layout-item .maximo-post-element {
+	margin-bottom: 0.9375em;
+}
+
+.maximo-fullwidth-layout-item .maximo-post-element:last-child,
+.maximo-horizontal-list-layout-item .maximo-post-element:last-child {
+	margin-bottom: 0;
+}
+
+.maximo-fullwidth-layout-item .maximo-post-element-meta,
+.maximo-horizontal-list-layout-item .maximo-post-element-meta {
+	margin-bottom: 5px;
+}
+
+body.maximo-has-no-sidebar .maximo-fullwidth-layout-item .maximo-post-element:not(.maximo-post-element-thumbnail) {
+	padding: 0 1.875em;
+}
+
+.maximo-fullwidth-layout-item .maximo-post-element-thumbnail {
+	margin-bottom: 1em;
+}
+
+.maximo-fullwidth-layout-item .maximo-post-element.maximo-post-element-thumbnail:not(:first-child) {
+	margin-top: 1em;
+}
+
+.maximo-fullwidth-layout-item .maximo-post-element-title .maximo-entry-title {
+	margin-top: 0;
+}
+
+.maximo-horizontal-list-layout-item .maximo-post-thumbnail-col {
+	max-width: 40%;
+}
+
+.maximo-horizontal-list-layout-item .maximo-post-content-col {
+	max-width: 100%;
+}
+
+.maximo-horizontal-list-layout-item.maximo-thumbnail-right .maximo-post-thumbnail-col {
+	order: 2;
+}
+
+.maximo-horizontal-list-layout-item.maximo-thumbnail-right .maximo-post-content-col {
+	order: 1;
+}
+
+@media( max-width: 992px ) {
+	.maximo-horizontal-list-layout-item .maximo-post-thumbnail-col,
+	.maximo-horizontal-list-layout-item .maximo-post-content-col {
+		max-width: 100%;
+		flex-basis: auto;
+	}
+
+	.maximo-horizontal-list-layout-item .maximo-post-thumbnail-col {
+		margin-bottom: 15px;
+	}
+
+	.maximo-horizontal-list-layout-item.maximo-thumbnail-right .maximo-post-thumbnail-col {
+		order: 1;
+	}
+
+	.maximo-horizontal-list-layout-item.maximo-thumbnail-right .maximo-post-content-col {
+		order: 2;
+	}
+}

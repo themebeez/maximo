@@ -1,0 +1,221 @@
+@media (max-width: 992px) {
+
+	.maximo-container {
+	  	padding-left: 2.5em;
+	  	padding-right: 2.5em;
+	}
+	
+	#maximo-primary {
+		width: 100%;
+	}
+
+	#secondary {
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	.maximo-top-header-right-element {
+		margin-top: 15px;
+		text-align: left;
+	}
+
+	body.maximo-sticky-sidebar-enabled #maximo-primary,
+	body.maximo-sticky-sidebar-enabled #secondary {
+		position: relative;
+	}
+
+	#maximo-banner.maximo-banner-wide-width > .maximo-banner-inner > .maximo-container {
+		max-width: 100%;
+	}
+
+	.maximo-banner-content-inner {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	.maximo-hide-mobile-tablet {
+		display: none;
+	}
+
+	.maximo-hide-tablet {
+		display: none;
+	}
+
+	.maximo-show-tablet {
+		display: block;
+	}
+
+	body.maximo-boxed #page {
+		border: none;
+	}
+
+	fieldset {
+		padding: 1em;
+	}
+
+	.maximo-container,
+	body.maximo-boxed .maximo-container {
+	  	padding-left: 1.875em;
+	  	padding-right: 1.875em;
+	}
+
+	body.maximo-sidebar-responsive-hidden #secondary {
+		display: none;
+	}
+
+	body.maximo-sidebar-before-content #maximo-primary {
+		order: 2;
+	}
+
+	body.maximo-sidebar-before-content #secondary {
+		order: 1;
+	}
+
+	body.maximo-has-left-sidebar.maximo-sidebar-after-content #maximo-primary {
+		order: 1;
+	}
+
+	body.maximo-has-left-sidebar.maximo-sidebar-after-content #secondary {
+		order: 2;
+	}
+
+	.maximo-search-modal .maximo-search-wrapper-inner {
+		width: 100%;
+	}
+
+	.maximo-search-modal .maximo-search-wrapper-inner > p {
+		display: none;
+	}
+
+
+	.comments-area .children,
+    .comments-area .children li,
+    .comments-area .children li.depth-2,
+    .comments-area .children li.depth-3,
+    .comments-area .children li.depth-4, 
+    .comments-area .children li.depth-5, 
+    .comments-area .children li.depth-6,
+    .comments-area .children li.depth-7,
+    .comments-area .children li.depth-8,
+    .comments-area .children li.depth-9,
+    .comments-area .children li.depth-10 {
+        padding-left:0;
+        margin-left:0;
+    }
+
+    .comment-form .comment-form-author, 
+    .comment-form .comment-form-email {
+        width:100%;
+    }
+
+    .comment-form .comment-form-author {
+        padding-right:0;
+    }
+
+    .comment-form .comment-form-email {
+        padding-left:0;
+    }
+
+    .comment-respond .comment-form-cookies-consent,
+    .comment-respond .comment-subscription-form,
+    .comment-respond .mc4wp-checkbox-wp-comment-form  {
+        display:none;
+    }
+}
+
+
+@media (max-width: 576px ) {
+	
+	.maximo-hide-mobile {
+		display: none;
+	}
+
+	.maximo-show-mobile {
+		display: block;
+	}
+
+	.maximo-container,
+	body.maximo-fullwidth-stretched .maximo-container {
+		padding-left: 1.25em;
+		padding-right: 1.25em;
+	}
+
+	#maximo-top-header,
+	.maximo-main-header-1 .maximo-main-header-logo-ad-container,
+	.maximo-main-header-1 .maximo-main-header-navigation-elements-container,
+	.maximo-main-header-2 .maximo-main-header-container,
+	#maximo-footer {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.site-content {
+		margin-top: 1.875em;
+		margin-bottom: 1.875em;
+	}
+
+	.maximo-archive-title-wrapper {
+		margin-bottom: 1.875em;
+	}
+
+	.maximo-author-box,
+	.maximo-posts-navigation,
+	.comments-area {
+		margin-top: 2.5em;
+	}
+
+	body.maximo-has-no-sidebar.maximo-boxed-contain.maximo-content-width main#maximo-main,
+	body.single.maximo-boxed-contain.maximo-has-sidebar main#maximo-main, 
+	body.page.maximo-boxed-contain.maximo-has-sidebar main#maximo-main,
+	body.single.maximo-boxed-contain main#maximo-main, 
+	body.page.maximo-boxed-contain main#maximo-main,
+	.maximo-boxed-fullwidth-article, 
+	.maximo-boxed-horizontal-list-article {
+		padding: 1.25em;
+	}
+
+	.maximo-fullwidth-layout-item:not(:last-child), 
+	.maximo-horizontal-list-layout-item:not(:last-child) {
+		margin-bottom: 1.875em;
+	}
+
+	.maximo-author-box-inner {
+		padding: 1.24em;
+	}
+
+	.maximo-posts-navigation .nav-previous {
+		margin-bottom: 1.875em;
+	}
+
+	#maximo-footer-widgets-wrapper .widget {
+		margin-bottom: 2.5em;
+	}
+
+	#maximo-footer-widgets-wrapper .maximo-row > div:last-child .widget {
+		margin-bottom: 0;
+	}
+
+	#maximo-footer-widgets-wrapper .widget .widget-title h4 {
+		margin-bottom: 0;
+	}
+
+	.maximo-search-modal .maximo-search-form input[type="search"] {
+		height: 2.5em;
+		font-size: 1.125rem;
+		padding-right: 3rem;
+	}
+
+	.maximo-search-modal .maximo-search-form button.maximo-search-form-submit {
+		font-size: 1.125rem;
+	}
+
+	.maximo-search-form-close-btn {
+		font-size: 1.25rem;
+	}
+
+	.error-404.not-found h1.page-title {
+		font-size: 8.75rem;
+	}
+}

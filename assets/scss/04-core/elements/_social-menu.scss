@@ -1,0 +1,100 @@
+.maximo-social-menu-element:not(.maximo-social-menu-title-displayed) ul li a {
+    font-size: 0px;
+}
+
+.maximo-social-menu-element ul li a[href*=".com"]::before {
+    font-family: 'fontisto';
+    font-size: 0.875rem;
+}
+
+.maximo-social-menu-element.maximo-social-menu-title-displayed ul li a[href*=".com"]::before {
+    margin-right: 5px;
+}
+
+.maximo-social-menu-element ul li a[href*="facebook"]::before {
+    content: "\e918";
+}
+
+.maximo-social-menu-element ul li a[href*="twitter"]::before {
+    content: "\e942";
+}
+
+.maximo-social-menu-element ul li a[href*="instagram"]::before {
+    content: "\e922";
+}
+
+.maximo-social-menu-element ul li a[href*="youtube"]::before {
+    content: "\e94d";
+}
+
+.maximo-social-menu-element ul li a[href*="pinterest"]::before {
+    content: "\e92e";
+}
+
+.maximo-social-menu-element ul li a[href*="linkedin"]::before {
+    content: "\e926";
+}
+
+.maximo-social-menu-element ul li a[href*="vk"]::before {
+    content: "\ea99";
+}
+
+.maximo-social-menu-element ul li a[href*="tumblr"]::before {
+    content: "\e940";
+}
+
+.maximo-social-menu-element ul li a[href*="reddit"]::before {
+    content: "\e932";
+}
+
+.maximo-social-menu-element ul li a[href*="behance"]::before {
+    content: "\e910";
+}
+
+.maximo-social-menu-element ul li a[href*="github"]::before {
+    content: "\e91c";
+}
+
+.maximo-social-menu-element ul li a[href*="spotify"]::before {
+    content: "\e939";
+}
+
+.maximo-social-menu-element ul li a[href*="vimeo"]::before {
+    content: "\e943";
+}
+
+.maximo-social-menu-element ul li a[href*="quora"]::before {
+    content: "\ea91";
+}
+
+.maximo-social-menu-element ul li a[href*="twitch"]::before {
+    content: "\e941";
+}
+
+.maximo-social-menu-element ul li a[href*="slack"]::before {
+    content: "\e936";
+}
+
+.maximo-social-menu-element ul li a[href*="whatsapp"]::before {
+    content: "\e945";
+}
+
+.maximo-social-menu-element ul li a[href*="skype"]::before {
+    content: "\e935";
+}
+
+.maximo-social-menu-element ul li a[href*="snapchat"]::before {
+    content: "\e937";
+}
+
+.maximo-social-menu-element ul li a[href*="medium"]::before {
+    content: "\e92a";
+}
+
+.maximo-social-menu-element ul li a[href*="foursquare"]::before {
+    content: "\e91a";
+}
+
+.maximo-social-menu-element ul li a[href*="rss"]::before {
+    content: "\e9c5";
+}

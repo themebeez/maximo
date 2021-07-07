@@ -1,0 +1,14 @@
+#maximo-footer {
+	background-color: var(--maximo-background-color);
+	color: var(--maximo-bg-text-color);
+	border-top: 1px solid var(--maximo-border-color);
+}
+
+#maximo-footer a {
+	color: var(--maximo-bg-text-color);
+}
+
+#maximo-footer a:hover,
+#maximo-footer a:focus {
+	color: var(--maximo-accent-color);
+}

@@ -1,0 +1,25 @@
+.maximo-cart-count-present .maximo-cart-container,
+.maximo-wishlist-count-present .maximo-wishlist-container {
+    position: relative;
+}
+
+.maximo-cart-count-present .maximo-cart-container .maximo-cart,
+.maximo-wishlist-count-present .maximo-wishlist-container .maximo-wishlist {
+    padding-right: 17px;
+}
+
+.maximo-cart-count-present #maximo-cart-items-count,
+.maximo-wishlist-count-present #maximo-wishlist-items-count {
+    position: absolute;
+    font-size: var(--maximo-icon-font-size);
+    top: 0;
+    right: 0;
+    min-height: 22px;
+    min-width: 22px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--maximo-accent-color);
+    color: #fff;
+    line-height: 22px;
+    margin-top: 10px;
+}

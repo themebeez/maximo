@@ -1,0 +1,85 @@
+.site-title,
+.site-logo {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-logo.maximo-alternate-logo-wrapper,
+.site-logo.maximo-dark-mode-logo-wrapper {
+    display: none;
+}
+
+body.maximo-dark-mode-enabled {
+    .site-logo.maximo-default-logo-wrapper {
+        display: none;
+    }
+
+    &:not(.maximo-transparent-header-enabled) {
+        .site-logo.maximo-dark-mode-logo-wrapper {
+            display: block;
+        }
+    }
+
+    &.maximo-transparent-header-enabled {
+
+        .maximo-main-header-container {
+            &.maximo-sticky-main-navigation.maximo-sticky-enabled {
+                .site-logo.maximo-alternate-logo-wrapper {
+                    display: none;
+                }
+                .site-logo.maximo-dark-mode-logo-wrapper {
+                    display: block;
+                }
+            }
+
+            &.maximo-sticky-main-navigation:not(.maximo-sticky-enabled) {
+                .site-logo.maximo-dark-mode-logo-wrapper {
+                    display: none;
+                }
+                .site-logo.maximo-alternate-logo-wrapper {
+                    display: block;
+                }
+                
+            }
+        }
+    }    
+}
+
+body.maximo-dark-mode-disabled {
+
+    &.maximo-transparent-header-enabled {
+        .site-logo.maximo-default-logo-wrapper {
+            display: none;
+        }
+
+        .site-logo.maximo-alternate-logo-wrapper {
+            display: block;
+        }
+
+        .maximo-main-header-container {
+            &.maximo-sticky-main-navigation.maximo-sticky-enabled {
+                .site-logo.maximo-alternate-logo-wrapper {
+                    display: none;
+                }
+                .site-logo.maximo-default-logo-wrapper {
+                    display: block;
+                }
+            }
+
+            &.maximo-sticky-main-navigation:not(.maximo-sticky-enabled) {
+                .site-logo.maximo-default-logo-wrapper {
+                    display: none;
+                }
+                .site-logo.maximo-alternate-logo-wrapper {
+                    display: block;
+                }
+                
+            }
+        }
+    }
+}
+
+.site-branding {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,87 @@
+body.page .maximo-entry-thumbnail-container {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+body.page.maximo-page-header-enabled .maximo-entry-thumbnail-container,
+body.single.maximo-page-header-enabled .maximo-entry-thumbnail-container {
+	margin-top: 0;
+}
+
+body.single .maximo-entry-thumbnail-container,
+body.single .maximo-entry-thumbnail-container {
+	margin-top: 1em;
+	margin-bottom: 2.5em;
+}
+
+/*
+	Site Layout - Fullwidth Contained / Fullwidth Stretched
+	Sidebar - No Sidebar
+	Single Content Width: Content Width
+*/
+body.maximo-has-no-sidebar.maximo-fullwidth-contained,
+body.maximo-has-no-sidebar.maximo-fullwidth-stretched {
+	main#maximo-main > article > .maximo-entry-content .alignfull {
+		width:  100vw;
+		max-width:  100vw;
+		margin-left:  calc(50% - 50vw);
+	}
+}
+
+
+/*
+	Site Layout - Boxed Contain
+	Single Content Width: Narrow Width
+*/
+
+body.maximo-boxed-contain.maximo-narrow-width {
+
+	main#maximo-main > article > .maximo-entry-content .alignwide {
+		width: unset;
+		max-width: 100%;
+	}
+
+	main#maximo-main > article > .maximo-entry-content .alignfull {
+		width: unset;
+		max-width: 100%;
+		margin-left: -3.125em;
+		margin-right: -3.125em;
+	}
+}
+
+
+/*
+	Site Layout - Boxed Contain
+	Sidebar - No Sidebar
+	Single Content Width: Content Width
+*/
+
+body.single.maximo-boxed-contain.maximo-has-no-sidebar, 
+body.page.maximo-boxed-contain.maximo-has-no-sidebar { 
+	main#maximo-main {
+		border: 1px solid var(--maximo-border-color);
+		padding: 3.125em;
+	}
+}
+
+body.single.maximo-boxed-contain.maximo-has-sidebar, 
+body.page.maximo-boxed-contain.maximo-has-sidebar { 
+	main#maximo-main {
+		border: 1px solid var(--maximo-border-color);
+		padding: 1.875em;
+	}
+}
+
+body.maximo-has-no-sidebar.maximo-boxed-contain.maximo-content-width {
+
+	main#maximo-main > article > .maximo-entry-content .alignwide {
+		width: unset;
+	}
+
+	main#maximo-main > article > .maximo-entry-content .alignfull {
+		width: unset;
+		max-width: 100%;
+		margin-left: -3.125em;
+		margin-right: -3.125em;
+	}
+}

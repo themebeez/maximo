@@ -1,0 +1,52 @@
+.maximo-entry-content > *:not(:last-child) {
+	margin-bottom: 1.25em;
+}
+
+.maximo-entry-thumbnail-container .post-thumbnail {
+	text-align: center;
+}
+
+.maximo-entry-content {
+	color: var(--maximo-content-color);
+}
+
+.maximo-entry-content a {
+	text-decoration: underline;
+	color: var(--maximo-accent-color);
+}
+
+.maximo-entry-content .page-links {
+	clear: both;
+	text-align: center;
+}
+
+span.edit-link {
+	clear: both;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-size: var(--maximo-font-size-small);
+}
+
+span.edit-link a {
+	text-decoration: none;
+	color: var(--maximo-accent-color);
+}
+
+span.edit-link a:hover {
+	text-decoration: underline;
+}
+
+span.edit-link a i {
+	font-size: 14px;
+}
+
+.maximo-entry-footer {
+	margin-top: 2em;
+}
+
+.maximo-entry-post-tags a,
+.maximo-entry-updated-date {
+	font-size: var(--maximo-font-size-small);
+	margin-bottom: 10px;
+}

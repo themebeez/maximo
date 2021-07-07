@@ -1,0 +1,86 @@
+#maximo-page-header {
+	position: relative;
+}
+
+.maximo-page-header-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.25);
+}
+
+.maximo-page-header-content-wrapper {
+	position: relative;
+}
+
+.maximo-page-header-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.maximo-page-header-content-top .maximo-page-header-content {
+	bottom: auto;
+	top: 0;
+}
+
+.maximo-page-header-content-center .maximo-page-header-content {
+	bottom: auto;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.maximo-page-header-content-bottom .maximo-page-header-content {
+	bottom: 0;
+	top: auto;
+}
+
+.maximo-page-header-content .maximo-post-structure-categories {
+	margin-bottom: 0.9375em;
+}
+
+.maximo-page-header-content .maximo-page-title {
+	margin-bottom: 0;
+}
+
+.maximo-page-header-content .maximo-post-meta-entries {
+	margin-top: 0.9375em;
+}
+
+.maximo-page-header-content .maximo-post-structure-categories .post-categories li a {
+    background-color: var(--maximo-accent-color);
+    border: 1px solid var(--maximo-accent-color);
+    border-radius: 3px;
+    color: var(--maximo-accent-bg-text-color);
+    padding: 5px 10px;
+    transition-duration: 0.3s;
+    font-size: var(--maximo-font-size-small);
+}
+
+.maximo-page-header-content .maximo-post-structure-categories .post-categories li a:hover {
+	opacity: 0.9;
+	transition-duration: 0.3s;
+	color: var(--maximo-accent-bg-text-color);
+}
+
+#maximo-page-header.maximo-page-header-breadcrumbs-before #maximo-breadcrumbs {
+	margin-bottom: 40px;
+}
+
+#maximo-page-header.maximo-page-header-breadcrumbs-after #maximo-breadcrumbs {
+	margin-top: 40px;
+}
+
+#maximo-page-header.maximo-text-right .breadcrumbs ul.trail-items {
+	justify-content: flex-start;
+}
+
+#maximo-page-header.maximo-text-center .breadcrumbs ul.trail-items {
+	justify-content: center;
+}
+
+#maximo-page-header.maximo-text-right .breadcrumbs ul.trail-items {
+	justify-content: flex-end;
+}
