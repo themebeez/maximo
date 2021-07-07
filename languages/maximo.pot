@@ -1946,6 +1946,10 @@ msgctxt "placeholder"
 msgid "Type here to search"
 msgstr ""
 
+#: template-maximo-fullwidth.php:3
+msgid "Maximo Fullwidth"
+msgstr ""
+
 #: template-parts/content-none.php:40
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
 msgstr ""
@@ -2010,10 +2014,6 @@ msgstr ""
 
 #: template-parts/miscellaneous/button-scroll-top.php:18
 msgid "Scroll to Top"
-msgstr ""
-
-#: template-maximo-fullwidth.php:3
-msgid "Maximo Fullwidth"
 msgstr ""
 
 #: woocommerce/checkout/form-checkout.php:26
