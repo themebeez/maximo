@@ -87,14 +87,14 @@ wp.customize.controlConstructor['maximo-google-fonts'] = wp.customize.Control.ex
 			// Update the font category based on the selected font
 			$(this).parent().parent().find('.google-fonts-category').val(bodyfontcontrol.googlefontslist[index].category);
 
-			taleBlogGetAllSelects($(this).parent().parent());
+			maximoBlogGetAllSelects($(this).parent().parent());
 		});
 
 		$('.google_fonts_select_control select').on('change', function() {
-			taleBlogGetAllSelects($(this).parent().parent());
+			maximoBlogGetAllSelects($(this).parent().parent());
 		});
 
-		function taleBlogGetAllSelects($element) {
+		function maximoBlogGetAllSelects($element) {
 			var selectedFont = {
 				font: $element.find('.google-fonts-list').val(),
 				regularweight: $element.find('.google-fonts-regularweight-style').val(),

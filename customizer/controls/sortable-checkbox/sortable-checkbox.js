@@ -14,16 +14,16 @@
 		$( ".sortable-checkbox_control .sortable" ).sortable({
 			placeholder: "pill-ui-state-highlight",
 			update: function( event, ui ) {
-				taleBlogGetAllPillCheckboxes($(this).parent());
+				maximoBlogGetAllPillCheckboxes($(this).parent());
 			}
 		});
 
 		$('.sortable-checkbox_control .sortable-pill-checkbox').on('change', function () {
-			taleBlogGetAllPillCheckboxes($(this).parent().parent().parent());
+			maximoBlogGetAllPillCheckboxes($(this).parent().parent().parent());
 		});
 
 		// Get the values from the checkboxes and add to our hidden field
-		function taleBlogGetAllPillCheckboxes($element) {
+		function maximoBlogGetAllPillCheckboxes($element) {
 			var inputValues = $element.find('.sortable-pill-checkbox').map(function() {
 				if( $(this).is(':checked') ) {
 					return $(this).val();
