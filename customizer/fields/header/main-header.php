@@ -549,6 +549,452 @@ $wp_customize->add_control(
 	)
 );
 
+// background color 
+
+$wp_customize->add_setting(
+	'main_header_button_background_color_separator',
+	array(
+		'sanitize_callback' => 'esc_html',
+		'default' => '',
+	)
+);
+
+$wp_customize->add_control(
+	new Maximo_Customize_Divider_Control(
+		$wp_customize,
+		'main_header_button_background_color_separator',
+		array(
+			'section' => 'maximo_main_header',
+			'priority' => 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		)
+	)
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_background_color', 
+	array(
+		'sanitize_callback' => '',
+		'default' => $maximo_customizer_defaults['main_header_button_background_color'],
+	) 
+);
+
+$wp_customize->add_control( 
+	new Maximo_Customize_Alpha_Color_Picker_Control( 
+		$wp_customize, 
+		'main_header_button_background_color', 
+		array(
+			'label'	   	=> esc_html__( 'Background Color', 'maximo' ),
+			'section'  	=> 'maximo_main_header',
+			'priority' 	=> 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		) 
+	) 
+);
+
+$wp_customize->add_setting(
+	'main_header_button_hover_background_color_separator',
+	array(
+		'sanitize_callback' => 'esc_html',
+		'default' => '',
+	)
+);
+
+$wp_customize->add_control(
+	new Maximo_Customize_Divider_Control(
+		$wp_customize,
+		'main_header_button_hover_background_color_separator',
+		array(
+			'section' => 'maximo_main_header',
+			'priority' => 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		)
+	)
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_hover_background_color', 
+	array(
+		'sanitize_callback' => '',
+		'default' => $maximo_customizer_defaults['main_header_button_hover_background_color'],
+	) 
+);
+
+$wp_customize->add_control( 
+	new Maximo_Customize_Alpha_Color_Picker_Control( 
+		$wp_customize, 
+		'main_header_button_hover_background_color', 
+		array(
+			'label'	   	=> esc_html__( 'Background Color - On Hover', 'maximo' ),
+			'section'  	=> 'maximo_main_header',
+			'priority' 	=> 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		) 
+	) 
+);
+
+// text
+
+$wp_customize->add_setting(
+	'main_header_button_text_color_separator',
+	array(
+		'sanitize_callback' => 'esc_html',
+		'default' => '',
+	)
+);
+
+$wp_customize->add_control(
+	new Maximo_Customize_Divider_Control(
+		$wp_customize,
+		'main_header_button_text_color_separator',
+		array(
+			'section' => 'maximo_main_header',
+			'priority' => 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		)
+	)
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_text_color', 
+	array(
+		'sanitize_callback' => '',
+		'default' => $maximo_customizer_defaults['main_header_button_text_color'],
+	) 
+);
+
+$wp_customize->add_control( 
+	new Maximo_Customize_Alpha_Color_Picker_Control( 
+		$wp_customize, 
+		'main_header_button_text_color', 
+		array(
+			'label'	   	=> esc_html__( 'Text Color', 'maximo' ),
+			'section'  	=> 'maximo_main_header',
+			'priority' 	=> 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		) 
+	) 
+);
+
+$wp_customize->add_setting(
+	'main_header_button_hover_text_color_separator',
+	array(
+		'sanitize_callback' => 'esc_html',
+		'default' => '',
+	)
+);
+
+$wp_customize->add_control(
+	new Maximo_Customize_Divider_Control(
+		$wp_customize,
+		'main_header_button_hover_text_color_separator',
+		array(
+			'section' => 'maximo_main_header',
+			'priority' => 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		)
+	)
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_hover_text_color', 
+	array(
+		'sanitize_callback' => '',
+		'default' => $maximo_customizer_defaults['main_header_button_hover_text_color'],
+	) 
+);
+
+$wp_customize->add_control( 
+	new Maximo_Customize_Alpha_Color_Picker_Control( 
+		$wp_customize, 
+		'main_header_button_hover_text_color', 
+		array(
+			'label'	   	=> esc_html__( 'Text Color - On Hover', 'maximo' ),
+			'section'  	=> 'maximo_main_header',
+			'priority' 	=> 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		) 
+	) 
+);
+
+// border
+
+$wp_customize->add_setting(
+	'main_header_button_border_width_separator',
+	array(
+		'sanitize_callback' => 'esc_html',
+		'default' => '',
+	)
+);
+
+$wp_customize->add_control(
+	new Maximo_Customize_Divider_Control(
+		$wp_customize,
+		'main_header_button_border_width_separator',
+		array(
+			'section' => 'maximo_main_header',
+			'priority' => 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		)
+	)
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_border_width', 
+	array(
+		'default' => $maximo_customizer_defaults['main_header_button_border_width'],
+		'sanitize_callback' 	=> 'maximo_sanitize_range',
+	) 
+);
+
+$wp_customize->add_control( 
+	new Maximo_Customize_Range_Control( 
+		$wp_customize, 
+		'main_header_button_border_width', 
+		array(
+			'label' 			=> esc_html__( 'Border Width (px)', 'maximo' ),
+			'section'  			=> 'maximo_main_header',
+            'input_attrs' 		=> array(
+                'min'		=> 0,
+                'max' 		=> 5,
+                'step' 		=> 1,
+            ),
+		) 
+	) 
+);
+
+$wp_customize->add_setting(
+	'main_header_button_border_color_separator',
+	array(
+		'sanitize_callback' => 'esc_html',
+		'default' => '',
+	)
+);
+
+$wp_customize->add_control(
+	new Maximo_Customize_Divider_Control(
+		$wp_customize,
+		'main_header_button_border_color_separator',
+		array(
+			'section' => 'maximo_main_header',
+			'priority' => 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		)
+	)
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_border_color', 
+	array(
+		'sanitize_callback' => '',
+		'default' => $maximo_customizer_defaults['main_header_button_border_color'],
+	) 
+);
+
+$wp_customize->add_control( 
+	new Maximo_Customize_Alpha_Color_Picker_Control( 
+		$wp_customize, 
+		'main_header_button_border_color', 
+		array(
+			'label'	   	=> esc_html__( 'Border Color', 'maximo' ),
+			'section'  	=> 'maximo_main_header',
+			'priority' 	=> 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		) 
+	) 
+);
+
+$wp_customize->add_setting(
+	'main_header_button_hover_border_color_separator',
+	array(
+		'sanitize_callback' => 'esc_html',
+		'default' => '',
+	)
+);
+
+$wp_customize->add_control(
+	new Maximo_Customize_Divider_Control(
+		$wp_customize,
+		'main_header_button_hover_border_color_separator',
+		array(
+			'section' => 'maximo_main_header',
+			'priority' => 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		)
+	)
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_hover_border_color', 
+	array(
+		'sanitize_callback' => '',
+		'default' => $maximo_customizer_defaults['main_header_button_hover_border_color'],
+	) 
+);
+
+$wp_customize->add_control( 
+	new Maximo_Customize_Alpha_Color_Picker_Control( 
+		$wp_customize, 
+		'main_header_button_hover_border_color', 
+		array(
+			'label'	   	=> esc_html__( 'Border Color - On Hover', 'maximo' ),
+			'section'  	=> 'maximo_main_header',
+			'priority' 	=> 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		) 
+	) 
+);
+
+// main header button padding
+
+$wp_customize->add_setting(
+	'main_header_button_padding_separator',
+	array(
+		'sanitize_callback' => 'esc_html',
+		'default' => '',
+	)
+);
+
+$wp_customize->add_control(
+	new Maximo_Customize_Divider_Control(
+		$wp_customize,
+		'main_header_button_padding_separator',
+		array(
+			'section' => 'maximo_main_header',
+			'priority' => 10,
+			'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		)
+	)
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_desktop_top', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['desktop_top'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_desktop_right', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['desktop_right'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_desktop_bottom', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['desktop_bottom'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_desktop_left', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['desktop_left'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_tablet_top', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['tablet_top'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_tablet_right', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['tablet_right'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_tablet_bottom', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['tablet_bottom'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_tablet_left', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['tablet_left'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_mobile_top', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['mobile_top'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_mobile_right', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['mobile_right'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_mobile_bottom', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['mobile_bottom'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_setting( 
+	'main_header_button_padding_mobile_left', 
+	array(
+		'default'           	=> $maximo_customizer_defaults['main_header_button_padding']['mobile_left'],
+		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
+	) 
+);
+
+$wp_customize->add_control( 
+	new Maximo_Customize_Dimensions_Control( 
+		$wp_customize, 
+		'main_header_button_padding', 
+		array(
+			'label'	   				=> esc_html__( 'Padding (px)', 'maximo' ),
+			'section'  				=> 'maximo_main_header',				
+			'settings'   => array(
+		        'desktop_top' 		=> 'main_header_button_padding_desktop_top',
+		        'desktop_right' 		=> 'main_header_button_padding_desktop_right',
+		        'desktop_bottom' 	=> 'main_header_button_padding_desktop_bottom',
+		        'desktop_left' 	=> 'main_header_button_padding_desktop_left',
+		        'tablet_top' 		=> 'main_header_button_padding_tablet_top',
+		        'tablet_right' 		=> 'main_header_button_padding_tablet_right',
+		        'tablet_bottom' 	=> 'main_header_button_padding_tablet_bottom',
+		        'tablet_left' 	=> 'main_header_button_padding_tablet_left',
+		        'mobile_top' 		=> 'main_header_button_padding_mobile_top',
+		        'mobile_right' 		=> 'main_header_button_padding_mobile_right',
+		        'mobile_bottom' 	=> 'main_header_button_padding_mobile_bottom',
+		        'mobile_left' 	=> 'main_header_button_padding_mobile_left',
+			),
+			'priority' 				=> 10,
+		    'input_attrs' 			=> array(
+		        'min'   => 0,
+		        'max'   => 100,
+		        'step'  => 1,
+		    ),
+		    'active_callback' => 'maximo_is_button_element_enabled_on_main_header'
+		) 
+	) 
+);
+
 
 if ( class_exists( 'WooCommerce' ) ) {
 

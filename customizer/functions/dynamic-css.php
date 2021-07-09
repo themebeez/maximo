@@ -502,6 +502,97 @@ if ( ! function_exists( 'maximo_dynamic_css' ) ) {
 			}';
 		}
 
+        // Header button CSS styles
+        $main_header_elements = maximo_get_option( 'main_header_elements' );
+
+		if ( $main_header_elements && in_array( 'button', $main_header_elements ) ) {
+            $css .= '.maximo-header-element-btn {
+                color: ' . esc_attr( maximo_get_option( 'main_header_button_text_color' ) ) . ';
+                background-color: ' . esc_attr( maximo_get_option( 'main_header_button_background_color' ) ) . ';
+                border-color: ' . esc_attr( maximo_get_option( 'main_header_button_border_color' ) ) . ';
+                border-width: ' . esc_attr( maximo_get_option( 'main_header_button_border_width' ) ) . ';
+            }';
+
+            $css .= '.maximo-header-element-btn {';
+                $main_header_button_padding_desktop_top = ( maximo_get_option( 'main_header_button_padding_desktop_top' ) ) ? maximo_get_option( 'main_header_button_padding_desktop_top' ) : $customizer_defaults['main_header_button_padding']['desktop_top'];
+
+                $css .= '
+                    padding-top: ' . absint( $main_header_button_padding_desktop_top ) . 'px;
+                ';
+
+                $main_header_button_padding_desktop_right = ( maximo_get_option( 'main_header_button_padding_desktop_right' ) ) ? maximo_get_option( 'main_header_button_padding_desktop_right' ) : $customizer_defaults['main_header_button_padding']['desktop_right'];
+
+                $css .= '
+                    padding-right: ' . absint( $main_header_button_padding_desktop_right ) . 'px;
+                ';
+
+                $main_header_button_padding_desktop_bottom = ( maximo_get_option( 'main_header_button_padding_desktop_bottom' ) ) ? maximo_get_option( 'main_header_button_padding_desktop_bottom' ) : $customizer_defaults['main_header_button_padding']['desktop_bottom'];
+
+                $css .= '
+                    padding-bottom: ' . absint( $main_header_button_padding_desktop_bottom ) . 'px;
+                ';
+
+                $main_header_button_padding_desktop_left = ( maximo_get_option( 'main_header_button_padding_desktop_left' ) ) ? maximo_get_option( 'main_header_button_padding_desktop_left' ) : $customizer_defaults['main_header_button_padding']['desktop_left'];
+
+                $css .= '
+                    padding-left: ' . absint( $main_header_button_padding_desktop_left ) . 'px;
+                ';
+
+            $css .= '}';
+
+                // tablet 
+
+                $main_header_button_padding_tablet_top = ( maximo_get_option( 'main_header_button_padding_tablet_top' ) ) ? maximo_get_option( 'main_header_button_padding_tablet_top' ) : $customizer_defaults['main_header_button_padding']['tablet_top'];
+
+                $main_header_button_padding_tablet_right = ( maximo_get_option( 'main_header_button_padding_tablet_right' ) ) ? maximo_get_option( 'main_header_button_padding_tablet_right' ) : $customizer_defaults['main_header_button_padding']['tablet_right'];
+
+                $main_header_button_padding_tablet_bottom = ( maximo_get_option( 'main_header_button_padding_tablet_bottom' ) ) ? maximo_get_option( 'main_header_button_padding_tablet_bottom' ) : $customizer_defaults['main_header_button_padding']['tablet_bottom'];
+
+                $main_header_button_padding_tablet_left = ( maximo_get_option( 'main_header_button_padding_tablet_left' ) ) ? maximo_get_option( 'main_header_button_padding_tablet_left' ) : $customizer_defaults['main_header_button_padding']['tablet_left'];
+
+                $css .= '@media(max-width:768px) {';
+
+                $css .= '
+					.maximo-header-element-btn {
+						padding-top: ' . absint( $main_header_button_padding_tablet_top ) . 'px;
+                        padding-right: ' . absint( $main_header_button_padding_tablet_right ) . 'px;
+                        padding-bottom: ' . absint( $main_header_button_padding_tablet_bottom ) . 'px;
+                        padding-left: ' . absint( $main_header_button_padding_tablet_left ) . 'px;
+					}';
+
+                 $css .= '}';
+
+                 // mobile 
+
+                $main_header_button_padding_mobile_top = ( maximo_get_option( 'main_header_button_padding_mobile_top' ) ) ? maximo_get_option( 'main_header_button_padding_mobile_top' ) : $customizer_defaults['main_header_button_padding']['mobile_top'];
+
+                $main_header_button_padding_mobile_right = ( maximo_get_option( 'main_header_button_padding_mobile_right' ) ) ? maximo_get_option( 'main_header_button_padding_mobile_right' ) : $customizer_defaults['main_header_button_padding']['mobile_right'];
+
+                 $main_header_button_padding_mobile_bottom = ( maximo_get_option( 'main_header_button_padding_mobile_bottom' ) ) ? maximo_get_option( 'main_header_button_padding_mobile_bottom' ) : $customizer_defaults['main_header_button_padding']['mobile_bottom'];
+
+                 $main_header_button_padding_mobile_left = ( maximo_get_option( 'main_header_button_padding_mobile_left' ) ) ? maximo_get_option( 'main_header_button_padding_mobile_left' ) : $customizer_defaults['main_header_button_padding']['mobile_left'];
+
+                 $css .= '@media(max-width:575px) {';
+
+                 $css .= '
+					.maximo-header-element-btn {
+						padding-top: ' . absint( $main_header_button_padding_mobile_top ) . 'px;
+                        padding-right: ' . absint( $main_header_button_padding_mobile_right ) . 'px;
+                        padding-bottom: ' . absint( $main_header_button_padding_mobile_bottom ) . 'px;
+                        padding-left: ' . absint( $main_header_button_padding_mobile_left ) . 'px;
+					}';
+
+                 $css .= '}';
+
+            // hover 
+
+            $css .= '.maximo-header-element-btn:hover {
+                color: ' . esc_attr( maximo_get_option( 'main_header_button_hover_text_color' ) ) . ';
+                background-color: ' . esc_attr( maximo_get_option( 'main_header_button_hover_background_color' ) ) . ';
+                border-color: ' . esc_attr( maximo_get_option( 'main_header_button_hover_border_color' ) ) . ';
+            }';
+        }
+
 
         // Site banner styles
 
@@ -1758,7 +1849,7 @@ if ( ! function_exists( 'maximo_dynamic_css' ) ) {
             $css .= '
                 .custom-logo,
                 .maximo-alternate-logo {
-                    height: ' . absint( $site_identity_logo_height_mobile ) . 'px !important;
+                    height: ' . absint( $site_identity_logo_height_mobile ) . 'px;
                     width: auto;
                 }
             ';
