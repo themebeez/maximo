@@ -176,7 +176,7 @@ if ( ! function_exists( 'maximo_copyright_text_template' ) ) {
 
 		$args['copyright_content'] = str_replace( array_keys($replace), array_values($replace), $args['copyright_content']);
 
-		$args['copyright_content'] .= sprintf( __( ' | %1$s Theme by %2$s.', 'maximo' ), 'Maximo', '<a href="https://themebeez.com" rel="author" target="_blank">Themebeez</a>' );
+		$args['copyright_content'] .= sprintf( __( ' | %1$s WordPress theme by %2$s.', 'maximo' ), 'Maximo', '<a href="https://themebeez.com" rel="author" target="_blank">Themebeez</a>' );
 
 		$args = apply_filters( 'maximo_footer_copyright_args', $args );
 

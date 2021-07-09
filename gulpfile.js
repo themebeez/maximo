@@ -1,4 +1,4 @@
-// Gulp file to compile Fascinate Pro SCSS & JS files
+// Gulp file to compile Maximo SCSS & JS files
 
 const gulp = require('gulp');
 const zip = require('gulp-zip');

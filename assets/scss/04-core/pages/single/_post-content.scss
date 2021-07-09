@@ -10,7 +10,8 @@
 	color: var(--maximo-content-color);
 }
 
-.maximo-entry-content a {
+.maximo-entry-content a:not(.button):not(.wp-block-button__link) {
+
 	text-decoration: underline;
 	color: var(--maximo-accent-color);
 }
