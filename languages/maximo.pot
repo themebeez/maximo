@@ -1434,7 +1434,7 @@ msgid "Disable Featured Image"
 msgstr ""
 
 #: inc/template-functions/template-functions-footer.php:179
-msgid " | %1$s Theme by %2$s."
+msgid " | %1$s WordPress theme by %2$s."
 msgstr ""
 
 #: inc/template-functions/template-functions-page-header.php:125

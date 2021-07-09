@@ -17,14 +17,14 @@
 
 .maximo-menu-icon-bar {
     width: 1.25em;
-    height: 1.5px;
+    height: 2px;
     background-color: var(--maximo-text-color);
     display: block;
     transition-duration: 0.3s;
 }
 
 .maximo-menu-icon-bar:not(:last-child) {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .maximo-mobile-nav-toggle-btn:hover .maximo-menu-icon-bar {
@@ -84,7 +84,7 @@ body .maximo-mobile-nav-toggle-btn:hover {
 .site-navigation > ul > li.menu-item-has-children > a:after {
     content: '\e968';
     font-family: 'fontisto';
-    font-size: 0.75rem;
+    font-size: 8px;
     display: inline-block;
     margin-left: 5px;
 }
@@ -92,7 +92,7 @@ body .maximo-mobile-nav-toggle-btn:hover {
 .site-navigation ul.sub-menu > li.menu-item-has-children > a:after {
     content: '\e96a';
     font-family: 'fontisto';
-    font-size: 0.75rem;
+    font-size: 8px;
     display: inline-block;
     float: right;
 }

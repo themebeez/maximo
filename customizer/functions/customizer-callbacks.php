@@ -57,7 +57,7 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
             'boxed_content_bg_color' => '#ffffff',
             'border_color' => '#eeeeee',
             'body_font_type' => 'system_font',
-            'body_system_font_family' => 'garamond',
+            'body_system_font_family' => 'arial',
             'body_system_font_weight' => '400',
             'body_google_font' => json_encode(
                 array(
@@ -68,18 +68,18 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
                 )
             ),
             'body_font_size' => array(
-                'desktop' => 20,
-                'tablet' => 18,
-                'mobile' => 16
+                'desktop' => 15,
+                'tablet' => 15,
+                'mobile' => 15
             ),
             'body_line_height' => array(
-                'desktop' => 1.4,
-                'tablet' => 1.4,
-                'mobile' => 1.4,
+                'desktop' => 1.5,
+                'tablet' => 1.5,
+                'mobile' => 1.5,
             ),
             'headings_font_type' => 'system_font',
-            'headings_system_font_family' => 'garamond',
-            'headings_system_font_weight' => '400',
+            'headings_system_font_family' => 'helvetica',
+            'headings_system_font_weight' => '500',
             'headings_google_font' => json_encode(
                 array(
                     'font' => 'Open Sans',
@@ -94,8 +94,8 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
                 'mobile' => 36,
             ),
             'h1_line_height' => array(
-                'desktop' => 1.5,
-                'tablet' => 1.5,
+                'desktop' => 1.2,
+                'tablet' => 1.2,
                 'mobile' => 1.2,
             ),
             'h2_font_size' => array(
@@ -104,9 +104,9 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
                 'mobile' => 32,
             ),
             'h2_line_height' => array(
-                'desktop' => 1.5,
-                'tablet' => 1.5,
-                'mobile' => 1.2
+                'desktop' => 1.3,
+                'tablet' => 1.3,
+                'mobile' => 1.3
             ),
             'h3_font_size' => array(
                 'desktop' => 28,
@@ -114,9 +114,9 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
                 'mobile' => 28
             ),
             'h3_line_height' => array(
-                'desktop' => 1.5,
-                'tablet' => 1.5,
-                'mobile' => 1.2
+                'desktop' => 1.3,
+                'tablet' => 1.3,
+                'mobile' => 1.3
             ),
             'h4_font_size' => array(
                 'desktop' => 24,
@@ -126,7 +126,7 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
             'h4_line_height' => array(
                 'desktop' => 1.4,
                 'tablet' => 1.4,
-                'mobile' => 1.2
+                'mobile' => 1.4
             ),
             'h5_font_size' => array(
                 'desktop' => 20,
@@ -134,9 +134,9 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
                 'mobile' => 20,
             ),
             'h5_line_height' => array(
-                'desktop' => 1.4,
-                'tablet' => 1.4,
-                'mobile' => 1.2,
+                'desktop' => 1.5,
+                'tablet' => 1.5,
+                'mobile' => 1.5,
             ),
             'h6_font_size' => array(
                 'desktop' => 18,
@@ -144,9 +144,9 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
                 'mobile' => 18,
             ),
             'h6_line_height' => array(
-                'desktop' => 1.4,
-                'tablet' => 1.4,
-                'mobile' => 1.2,
+                'desktop' => 1.5,
+                'tablet' => 1.5,
+                'mobile' => 1.5,
             ),
             'button_style' => 'default',
             'btn_txt_color' => '#ffffff',
@@ -154,7 +154,7 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
             'btn_txt_hover_color' => '#000000',
             'btn_bg_hover_color' => '#16c1ff',
             'btn_border_width' => 0,
-            'btn_border_radius' => 0,
+            'btn_border_radius' => 3,
             'btn_border_color' => '#000000',
             'btn_border_hover_color' => '#16c1ff',
             'txt_button_style' => 'default',
@@ -236,12 +236,12 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
             'archive_fullwidth_post_structure' => array( 'image', 'category', 'title', 'meta', 'excerpt' ),
             'archive_horizontal_list_post_structure' => array( 'category', 'title', 'meta', 'excerpt' ),
             'archive_post_meta' => array( 'author', 'date', 'comment', 'categories' ),
-            'archive_show_icons_in_post_meta' => false,
-            'archive_show_post_thumbnail' => false,
+            'archive_show_icons_in_post_meta' => true,
+            'archive_show_post_thumbnail' => true,
             'archive_post_thumbnail_size' => 'large',
             'archive_post_thumbnail_position' => 'right',
             'archive_excerpt_length' => 30,
-            'archive_excerpt_more' => '',
+            'archive_excerpt_more' => '...',
             'archive_enable_read_more_button' => false,
             'archive_read_more_button_title' => esc_html__( 'Read More', 'maximo' ),
             'archive_pagination_type' => 'default',
@@ -253,12 +253,12 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
                 'tablet' => 32,
                 'mobile' => 32,
             ),
-            'single_content_width' => 'maximo-content-width',
+            'single_content_width' => 'maximo-narrow-width',
             'single_narrow_width' => 700,
             'single_title_header_alignment' => 'left',
             'single_post_elements' => array( 'image', 'category', 'tags', 'updated_date', 'author_box', 'post_nav' ),
             'single_post_meta' => array( 'author', 'date', 'comment', 'categories' ),
-            'single_show_icons_in_post_meta' => false,
+            'single_show_icons_in_post_meta' => true,
             'single_show_toggle_comments_btn' => false,
             'single_comment_toggle_btn_title' => esc_html__( 'Show Comments', 'maximo' ),
             'prev_post_link_title_label' => esc_html__( 'Previous Post', 'maximo' ),
@@ -313,8 +313,8 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
             'dark_mode_site_description_color' => '#ffffff',
             'site_identity_alignment' => 'left',
             'site_identity_font_type' => 'system_font',
-            'site_identity_system_font_family' => 'arial',
-            'site_identity_system_font_weight' => '400',
+            'site_identity_system_font_family' => 'helvetica',
+            'site_identity_system_font_weight' => '500',
             'site_identity_google_font' => json_encode(
                 array(
                     'font' => 'Open Sans',
@@ -324,14 +324,14 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
                 )
             ),
             'site_identity_font_size' => array(
-                'desktop' => 36,
-                'tablet' => 36,
-                'mobile' => 36,
+                'desktop' => 32,
+                'tablet' => 26,
+                'mobile' => 22,
             ),
             'site_identity_line_height' => array(
-                'desktop' => 1.5,
-                'tablet' => 1.5,
-                'mobile' => 1.5,
+                'desktop' => 1.2,
+                'tablet' => 1.3,
+                'mobile' => 1.3,
             ),
             'enable_banner_slider' => false,
             'banner_slider_enable_on' => 'blog_page',
