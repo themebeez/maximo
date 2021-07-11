@@ -323,10 +323,10 @@ if ( ! function_exists( 'maximo_get_customizer_defaults' ) ) {
             'transparent_header_text_color' => '#ffffff',
             'transparent_header_link_hover_color' => '#16c1ff',
             'transparent_header_border_color' => '#eeeeee',
-            'site_identity_logo_height' => array(
-                'desktop' => 90,
-                'tablet' => 90,
-                'mobile' => 90
+            'site_identity_logo_max_width' => array(
+                'desktop' => 200,
+                'tablet' => 200,
+                'mobile' => 200
             ),
             'dark_mode_logo' => '',
             'site_title_color' => '#000000',

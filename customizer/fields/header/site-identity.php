@@ -75,25 +75,25 @@ $wp_customize->add_control(
 
 
 $wp_customize->add_setting( 
-	'site_identity_logo_height_desktop', 
+	'site_identity_logo_max_width_desktop', 
 	array(
-		'default'           	=> $maximo_customizer_defaults['site_identity_logo_height']['desktop'],
+		'default'           	=> $maximo_customizer_defaults['site_identity_logo_max_width']['desktop'],
 		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
 	) 
 );
 
 $wp_customize->add_setting( 
-	'site_identity_logo_height_tablet', 
+	'site_identity_logo_max_width_tablet', 
 	array(
-		'default'           	=> $maximo_customizer_defaults['site_identity_logo_height']['tablet'],
+		'default'           	=> $maximo_customizer_defaults['site_identity_logo_max_width']['tablet'],
 		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
 	) 
 );
 
 $wp_customize->add_setting( 
-	'site_identity_logo_height_mobile', 
+	'site_identity_logo_max_width_mobile', 
 	array(
-		'default'           	=> $maximo_customizer_defaults['site_identity_logo_height']['mobile'],
+		'default'           	=> $maximo_customizer_defaults['site_identity_logo_max_width']['mobile'],
 		'sanitize_callback' 	=> 'maximo_sanitize_integer_number',
 	) 
 );
@@ -101,19 +101,19 @@ $wp_customize->add_setting(
 $wp_customize->add_control( 
 	new Maximo_Customize_Slider_Control( 
 		$wp_customize, 
-		'site_identity_logo_height', 
+		'site_identity_logo_max_width', 
 		array(
-			'label' 			=> esc_html__( 'Height (px)', 'maximo' ),
+			'label' 			=> esc_html__( 'Logo max width (px)', 'maximo' ),
 			'section'  			=> 'title_tagline',
 			'settings' => array(
-		        'desktop' 	=> 'site_identity_logo_height_desktop',
-		        'tablet' 	=> 'site_identity_logo_height_tablet',
-		        'mobile' 	=> 'site_identity_logo_height_mobile',
+		        'desktop' 	=> 'site_identity_logo_max_width_desktop',
+		        'tablet' 	=> 'site_identity_logo_max_width_tablet',
+		        'mobile' 	=> 'site_identity_logo_max_width_mobile',
 		    ),
 			'priority' 				=> 10,
 		    'input_attrs' 			=> array(
-		        'min'   => 0,
-		        'max'   => 400,
+		        'min'   => 30,
+		        'max'   => 600,
 		        'step'  => 1,
 		    )
 		) 

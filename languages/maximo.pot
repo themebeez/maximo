@@ -97,23 +97,23 @@ msgstr ""
 msgid "Style"
 msgstr ""
 
-#: customizer/fields/buttons.php:87, customizer/fields/buttons.php:459
+#: customizer/fields/buttons.php:87, customizer/fields/buttons.php:459, customizer/fields/header/main-header.php:671
 msgid "Text Color"
 msgstr ""
 
-#: customizer/fields/buttons.php:126, customizer/fields/buttons.php:498, customizer/fields/pages/inner-header.php:375
+#: customizer/fields/buttons.php:126, customizer/fields/buttons.php:498, customizer/fields/header/main-header.php:587, customizer/fields/pages/inner-header.php:375
 msgid "Background Color"
 msgstr ""
 
-#: customizer/fields/buttons.php:167, customizer/fields/buttons.php:539
+#: customizer/fields/buttons.php:167, customizer/fields/buttons.php:539, customizer/fields/header/main-header.php:712
 msgid "Text Color - On Hover"
 msgstr ""
 
-#: customizer/fields/buttons.php:206, customizer/fields/buttons.php:578
+#: customizer/fields/buttons.php:206, customizer/fields/buttons.php:578, customizer/fields/header/main-header.php:628
 msgid "Background Color - On Hover"
 msgstr ""
 
-#: customizer/fields/buttons.php:245, customizer/fields/buttons.php:617
+#: customizer/fields/buttons.php:245, customizer/fields/buttons.php:617, customizer/fields/header/main-header.php:755
 msgid "Border Width (px)"
 msgstr ""
 
@@ -121,11 +121,11 @@ msgstr ""
 msgid "Border Radius (px)"
 msgstr ""
 
-#: customizer/fields/buttons.php:333, customizer/fields/buttons.php:705, customizer/fields/header/transparent-header.php:330
+#: customizer/fields/buttons.php:333, customizer/fields/buttons.php:705, customizer/fields/header/main-header.php:799, customizer/fields/header/transparent-header.php:330
 msgid "Border Color"
 msgstr ""
 
-#: customizer/fields/buttons.php:373, customizer/fields/buttons.php:745
+#: customizer/fields/buttons.php:373, customizer/fields/buttons.php:745, customizer/fields/header/main-header.php:840
 msgid "Border Color - On Hover"
 msgstr ""
 
@@ -161,7 +161,7 @@ msgstr ""
 msgid "Enable On"
 msgstr ""
 
-#: customizer/fields/fields-banner.php:108, customizer/fields/footer/copyright-bar.php:193, customizer/fields/footer/footer-widgets.php:66, customizer/fields/header/main-header.php:200, customizer/fields/header/main-header.php:378, customizer/fields/header/main-header.php:543, customizer/fields/header/main-header.php:630, customizer/fields/header/main-header.php:718, customizer/fields/header/top-header.php:69, customizer/fields/header/top-header.php:377, customizer/fields/header/top-header.php:461, customizer/fields/header/top-header.php:591, customizer/fields/miscellaneous.php:113, customizer/fields/pages/breadcrumbs.php:331
+#: customizer/fields/fields-banner.php:108, customizer/fields/footer/copyright-bar.php:193, customizer/fields/footer/footer-widgets.php:66, customizer/fields/header/main-header.php:200, customizer/fields/header/main-header.php:378, customizer/fields/header/main-header.php:543, customizer/fields/header/main-header.php:1076, customizer/fields/header/main-header.php:1164, customizer/fields/header/top-header.php:69, customizer/fields/header/top-header.php:377, customizer/fields/header/top-header.php:461, customizer/fields/header/top-header.php:591, customizer/fields/miscellaneous.php:113, customizer/fields/pages/breadcrumbs.php:331
 msgid "Device Visibility"
 msgstr ""
 
@@ -477,19 +477,23 @@ msgstr ""
 msgid "Open In A New Tab"
 msgstr ""
 
-#: customizer/fields/header/main-header.php:568
+#: customizer/fields/header/main-header.php:971
+msgid "Padding (px)"
+msgstr ""
+
+#: customizer/fields/header/main-header.php:1014
 msgid "Element - Cart"
 msgstr ""
 
-#: customizer/fields/header/main-header.php:589
+#: customizer/fields/header/main-header.php:1035
 msgid "Display Cart Items Number"
 msgstr ""
 
-#: customizer/fields/header/main-header.php:656
+#: customizer/fields/header/main-header.php:1102
 msgid "Element - Wishlist"
 msgstr ""
 
-#: customizer/fields/header/main-header.php:677
+#: customizer/fields/header/main-header.php:1123
 msgid "Display Wishlist Items Number"
 msgstr ""
 
@@ -522,7 +526,7 @@ msgid "Dark Mode - Logo"
 msgstr ""
 
 #: customizer/fields/header/site-identity.php:106
-msgid "Height (px)"
+msgid "Logo max width (px)"
 msgstr ""
 
 #: customizer/fields/header/site-identity.php:137
@@ -885,7 +889,7 @@ msgstr ""
 msgid "Heading - H6"
 msgstr ""
 
-#: customizer/functions/customizer-callbacks.php:246, customizer/functions/customizer-callbacks.php:347
+#: customizer/functions/customizer-callbacks.php:246, customizer/functions/customizer-callbacks.php:368
 msgid "Read More"
 msgstr ""
 
@@ -913,19 +917,19 @@ msgstr ""
 msgid "Button Text"
 msgstr ""
 
-#: customizer/functions/customizer-callbacks.php:427
+#: customizer/functions/customizer-callbacks.php:448
 msgid "Copyright &copy; {current_year} {site_title}"
 msgstr ""
 
-#: customizer/functions/customizer-callbacks.php:444
+#: customizer/functions/customizer-callbacks.php:465
 msgid "Related products"
 msgstr ""
 
-#: customizer/functions/customizer-callbacks.php:447
+#: customizer/functions/customizer-callbacks.php:468
 msgid "You may also like…"
 msgstr ""
 
-#: customizer/functions/customizer-callbacks.php:450
+#: customizer/functions/customizer-callbacks.php:471
 msgid "You may be interested in…"
 msgstr ""
 
