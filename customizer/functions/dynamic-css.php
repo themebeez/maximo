@@ -1044,7 +1044,6 @@ if ( ! function_exists( 'maximo_dynamic_css' ) ) {
             }
         }        
 
-        
 
         if ( maximo_get_option( 'archive_content_width' ) === 'maximo-narrow-width' && maximo_get_option( 'archive_narrow_width' ) && ! maximo_is_woocommerce_page() && ( is_archive() || is_home() || is_search() ) ) {
             $css .= '
@@ -1056,15 +1055,15 @@ if ( ! function_exists( 'maximo_dynamic_css' ) ) {
         }
 
 
-        // Logo height on desktop
+        // Logo max width on desktop
 
-        $site_identity_logo_height_desktop = ( maximo_get_option( 'site_identity_logo_height_desktop' ) ) ? maximo_get_option( 'site_identity_logo_height_desktop' ) : $customizer_defaults['site_identity_logo_height']['desktop'];
+        $site_identity_logo_max_width_desktop = ( maximo_get_option( 'site_identity_logo_max_width_desktop' ) ) ? maximo_get_option( 'site_identity_logo_max_width_desktop' ) : $customizer_defaults['site_identity_logo_max_width']['desktop'];
 
         $css .= '
             .custom-logo,
             .maximo-alternate-logo {
-                height: ' . absint( $site_identity_logo_height_desktop ) . 'px !important;
-                width: auto;
+                max-width: ' . absint( $site_identity_logo_max_width_desktop ) . 'px;
+                height: auto;
             }
         ';
 
@@ -1481,15 +1480,14 @@ if ( ! function_exists( 'maximo_dynamic_css' ) ) {
 			// End banner/slider styles for tablet
 
 
-            // Logo height on tablet
+            // Logo max width on tablet
 
-            $site_identity_logo_height_tablet = ( maximo_get_option( 'site_identity_logo_height_tablet' ) ) ? maximo_get_option( 'site_identity_logo_height_tablet' ) : $customizer_defaults['site_identity_logo_height']['tablet'];
+            $site_identity_logo_max_width_tablet = ( maximo_get_option( 'site_identity_logo_max_width_tablet' ) ) ? maximo_get_option( 'site_identity_logo_max_width_tablet' ) : $customizer_defaults['site_identity_logo_max_width']['tablet'];
 
             $css .= '
                 .custom-logo,
                 .maximo-alternate-logo {
-                    height: ' . absint( $site_identity_logo_height_tablet ) . 'px !important;
-                    width: auto;
+                    max-width: ' . absint( $site_identity_logo_max_width_tablet ) . 'px;
                 }
             ';
 
@@ -1842,19 +1840,18 @@ if ( ! function_exists( 'maximo_dynamic_css' ) ) {
 			// End banner/slider styles for mobile
 
 
-            // Logo height on mobile
+            // Logo max width on mobile
 
-            $site_identity_logo_height_mobile = ( maximo_get_option( 'site_identity_logo_height_mobile' ) ) ? maximo_get_option( 'site_identity_logo_height_mobile' ) : $customizer_defaults['site_identity_logo_height']['mobile'];
+            $site_identity_logo_max_width_mobile = ( maximo_get_option( 'site_identity_logo_max_width_mobile' ) ) ? maximo_get_option( 'site_identity_logo_max_width_mobile' ) : $customizer_defaults['site_identity_logo_max_width']['mobile'];
 
             $css .= '
                 .custom-logo,
                 .maximo-alternate-logo {
-                    height: ' . absint( $site_identity_logo_height_mobile ) . 'px;
-                    width: auto;
+                    max-width: ' . absint( $site_identity_logo_max_width_mobile ) . 'px;
                 }
             ';
 
-            // End site logo height style for mobile
+            // End site logo max width style for mobile
 
 		$css .= '}';
 
